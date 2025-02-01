@@ -1,0 +1,18 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Игнорировать временные файлы Godot
+.import/
+.export/
+.mono/
+mono/
+.cache/
+
+# Игнорировать файлы сборки
+*.mono
+*.import
+*.log
+*.tmp
+
+godot4-cpp/
