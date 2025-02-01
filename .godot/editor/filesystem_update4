@@ -1,0 +1,7 @@
+res://scenes/node_2d_test.tscn
+res://scenes/test.tscn
+res://game/Scenes/main_game_scene.tscn
+res://core/globals.gd
+res://core/events.gd
+res://game/Scenes/enemy_damage.gd
+res://game/Scenes/in_game_hud.gd

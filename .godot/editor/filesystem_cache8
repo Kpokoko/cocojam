@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1738425857
+icon.svg::CompressedTexture2D::6340785741561754665::1738424761::1738424771::1::::<><>::
+README.md::TextFile::-1::1738415769::0::1::::<><>::
+::res://core/::1738425857
+events.gd::GDScript::-1::1738425550::0::1::::<>Node<>::
+globals.gd::GDScript::-1::1738425700::0::1::::<>Node<>::
+::res://game/::1738424594
+::res://game/images/::1738425857
+Ellipse 3.svg::CompressedTexture2D::7822824273963625615::1738425854::1738425857::1::::<><>::
+temp_fon.png::CompressedTexture2D::8963584860655771308::1738424843::1738424856::1::::<><>::
+::res://game/Scenes/::1738425700
+main_game_scene.tscn::PackedScene::5195894592550179093::1738425700::0::1::::<><>::uid://d0ya6yu7fbwlg::::res://game/images/temp_fon.png
+::res://scenes/::1738425550
+node_2d_test.tscn::PackedScene::8418445490242252129::1738425550::0::1::::<><>::
+test.tscn::PackedScene::3515350588534135436::1738424474::0::1::::<><>::

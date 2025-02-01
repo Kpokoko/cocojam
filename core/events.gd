@@ -1,0 +1,5 @@
+extends Node
+
+signal point_changes(points: int)
+signal health_changes(health: int)
+signal steps_changes(steps: int)
