@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1738425380
+icon.svg::CompressedTexture2D::8062529284991237018::1738414236::1738414241::1::::<><>::
+README.md::TextFile::-1::1738414201::0::1::::<><>::
+::res://assets/::1738425557
+stem.png::CompressedTexture2D::1852020481088595918::1738425557::1738425557::1::::<><>::
+::res://assets/sprites/::1738425552
+slime_green.png::CompressedTexture2D::6347010072742182782::1738423887::1738423889::1::::<><>::
+::res://scenes/::1738425380
+flower.tscn::PackedScene::3159457263571825742::1738425088::0::1::::<><>::uid://bd4rjb8dlj7dt::::res://scenes/leaf.tscn
+leaf.tscn::PackedScene::2657902534150398353::1738425088::0::1::::<><>::uid://cwoslf33mes0e::::res://assets/sprites/slime_green.png<>res://scripts/leaf.gd
+node_2d_test.tscn::PackedScene::1096281836950677870::1738415910::0::1::::<><>::
+shop.tscn::PackedScene::2666427030545630625::1738425088::0::1::::<><>::uid://blap2giw1oy6a::::res://scenes/flower.tscn
+::res://scripts/::1738425087
+leaf.gd::GDScript::-1::1738425087::0::1::::<>Node2D<>::
