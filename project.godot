@@ -18,6 +18,7 @@ config/features=PackedStringArray("4.3", "Forward Plus")
 
 Events="*res://core/events.gd"
 Globals="*res://core/globals.gd"
+MonsterData="*res://game/scripts/MonsterData.gd"
 
 [display]
 

@@ -1,7 +1,11 @@
 res://scenes/node_2d_test.tscn
-res://scenes/test.tscn
 res://game/Scenes/main_game_scene.tscn
-res://core/globals.gd
-res://core/events.gd
-res://game/Scenes/enemy_damage.gd
 res://game/Scenes/in_game_hud.gd
+res://game/Scenes/enemy_damage.gd
+res://game/scene_parts/h_box_container.tscn
+res://game/scene_parts/in_game_hud.tscn
+res://core/events.gd
+res://core/globals.gd
+res://Monster.gd
+res://game/scene_parts/monster.tscn
+res://game/scripts/MonsterData.gd

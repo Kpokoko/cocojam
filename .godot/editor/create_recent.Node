@@ -1,8 +1,8 @@
+Sprite2D
+HBoxContainer
 Label
+MarginContainer
 Control
 Timer
-MarginContainer
-HBoxContainer
 VBoxContainer
-Sprite2D
 ColorRect
