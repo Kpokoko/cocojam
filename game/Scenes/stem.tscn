@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dgl8oy4jmeipq"]
 
 [ext_resource type="Texture2D" uid="uid://1nerh153rl2e" path="res://assets/stem.png" id="1_ooo27"]
-[ext_resource type="Script" path="res://scripts/FlowerButton.gd" id="2_gpk8v"]
+[ext_resource type="Script" path="res://game/scripts/FlowerButton.gd" id="2_gpk8v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ac56d"]
 size = Vector2(320, 192)

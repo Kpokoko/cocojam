@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cga6vijrtey5j"]
+[gd_scene load_steps=6 format=3 uid="uid://cga6vijrtey5j"]
 
 [ext_resource type="Texture2D" uid="uid://d0ya6yu7fbwlg" path="res://game/images/temp_fon.png" id="1_e48mg"]
 [ext_resource type="Texture2D" uid="uid://djpo1jou8qxml" path="res://game/images/Ellipse 3.svg" id="2_2rpgh"]
 [ext_resource type="Script" path="res://game/Scenes/enemy_damage.gd" id="3_gespw"]
 [ext_resource type="Script" path="res://game/Scenes/in_game_hud.gd" id="4_kplep"]
+[ext_resource type="PackedScene" uid="uid://blap2giw1oy6a" path="res://game/Scenes/flower.tscn" id="5_3h8uo"]
 
 [node name="MainGameScene" type="Node2D"]
 
@@ -128,6 +129,9 @@ text = "HP:"
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "100"
+
+[node name="Flower" parent="." instance=ExtResource("5_3h8uo")]
+position = Vector2(459, 607)
 
 [connection signal="pressed" from="HBoxContainer/Skill1" to="in_game_hud" method="_on_skill_1_pressed"]
 [connection signal="pressed" from="HBoxContainer/Skill2" to="in_game_hud" method="_on_skill_2_pressed"]
