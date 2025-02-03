@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://d3f3bnvamigjf"]
 
 [ext_resource type="Texture2D" uid="uid://cwoslf33mes0e" path="res://assets/sprites/slime_green.png" id="1_4tkkl"]
-[ext_resource type="Script" path="res://scripts/FlowerButton.gd" id="2_gmra0"]
+[ext_resource type="Script" path="res://game/scripts/FlowerButton.gd" id="2_gmra0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bshas"]
 atlas = ExtResource("1_4tkkl")
