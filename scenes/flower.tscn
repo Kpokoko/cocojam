@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://blap2giw1oy6a"]
+
+[ext_resource type="PackedScene" uid="uid://dgl8oy4jmeipq" path="res://scenes/stem.tscn" id="1_73y7d"]
+[ext_resource type="PackedScene" uid="uid://bd4rjb8dlj7dt" path="res://scenes/leaf.tscn" id="1_xp3bw"]
+[ext_resource type="PackedScene" uid="uid://d3f3bnvamigjf" path="res://scenes/flower_head.tscn" id="3_p5btm"]
+
+[node name="Flower" type="Node2D"]
+
+[node name="Stem" parent="." instance=ExtResource("1_73y7d")]
+position = Vector2(-2, -238)
+scale = Vector2(0.250209, 0.480848)
+
+[node name="LeafLeft" parent="." instance=ExtResource("1_xp3bw")]
+position = Vector2(-90, -158)
+flip = true
+
+[node name="LeafRight" parent="." instance=ExtResource("1_xp3bw")]
+position = Vector2(131, -416)
+
+[node name="FlowerHead" parent="." instance=ExtResource("3_p5btm")]
+position = Vector2(56, -530)
