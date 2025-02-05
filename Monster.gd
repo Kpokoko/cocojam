@@ -54,7 +54,7 @@ func add_effect(effect: String, damage: int, duration: int):
 			if duration > 0:
 				Globals.damage = 0
 		else:
-			effects[effect]["damage"] = damage
+			effects[effect]["damage"] += damage
 			effects[effect]["duration"] = duration
 	print("Добавлен эффект " + effect)
 
@@ -64,6 +64,8 @@ func effects_check(new_health):
 		if effect_name != "roots" and effect_data["duration"] > 0:
 			take_damage(effect_data["damage"], 0)
 			effect_data["duration"] -= 1
+		elif effect_name != "roots" and effect_data["duration"] <= 0:
+			effect_data["damage"] = 0
 	if blocked_turns > 0:
 		blocked_turns -= 1
 	else:
