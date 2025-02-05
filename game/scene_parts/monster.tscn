@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://csc81uvp57iww"]
 
-[ext_resource type="Script" path="res://Monster.gd" id="1_1iwwo"]
+[ext_resource type="Script" path="res://game/scripts/Monster.gd" id="1_1iwwo"]
 [ext_resource type="Texture2D" uid="uid://rm1246s2bl2v" path="res://game/sprites/Dragon.svg" id="2_50fuq"]
 
 [node name="Monster" type="Node2D"]
