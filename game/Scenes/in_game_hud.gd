@@ -49,7 +49,7 @@ func _on_skill_2_pressed() -> void:
 	enemy[0].take_damage(0,1)
 	enemy[0].add_effect("poison",1,2)
 
-func _on_skill_3_pressed() -> void:
+func _on_skill_3_pressed() -> void: 
 	enemy = []
 	var Monster = get_tree().current_scene.get_node_or_null("Monster") 
 	var monster = get_tree().current_scene.get_node_or_null("monster")
