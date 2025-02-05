@@ -6,6 +6,7 @@ var enemy_health := 100
 var steps := 6
 var damage := 15
 var deafault_steps := 6
+var deafault_player_steps := 1
 
 func change_point(diff: int):
 	points += diff
@@ -13,7 +14,7 @@ func change_point(diff: int):
 	
 func change_health(diff: int):
 	health += diff
-	Events.health_changes.emit(health)
+	Events.health_changes.emit	(health)
 	
 func change_enemy_health(diff: int):
 	enemy_health += diff
@@ -23,13 +24,17 @@ func set_damage(diff: int):
 	damage = diff
 	
 func set_steps(diff: int):
-	deafault_steps = diff
+	deafault_steps = diff + deafault_player_steps
+	
+func change_deafault_player_steps(diff: int):
+	deafault_player_steps += diff
 	
 func change_steps(diff: int):
 	steps += diff
 	if steps <= 0:
 		change_health(-damage)
 		steps = deafault_steps
+		Events.out_of_steps.emit(health)
 		
 	Events.steps_changes.emit(steps)
 	
@@ -51,6 +56,7 @@ func spawn_new_monster():
 	new_monster.health = monster_data["health"]
 	new_monster.damage = monster_data["damage"]
 	new_monster.steps_given = monster_data["steps_given"]
+	new_monster.score = monster_data["score"]
 	new_monster.get_node("Sprite2D").texture = monster_data["sprite"]
 	new_monster.monster_initialize()
 	

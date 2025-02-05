@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://p0lu8hddcdag"]
+
+[ext_resource type="Texture2D" uid="uid://8q0koic4oxx2" path="res://assets/white.png" id="1_7trgb"]
+[ext_resource type="Script" path="res://game/scripts/inventory.gd" id="1_dyhm3"]
+[ext_resource type="Texture2D" uid="uid://cnftunf3bq87m" path="res://assets/flower.png" id="2_27mwu"]
+[ext_resource type="Texture2D" uid="uid://ct0v6b5njtas2" path="res://assets/grey.png" id="3_rddie"]
+
+[node name="Skills" type="Node2D"]
+script = ExtResource("1_dyhm3")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_7trgb")
+region_enabled = true
+region_rect = Rect2(0, 0, 1280, 720)
+
+[node name="Flower" type="Sprite2D" parent="Background"]
+position = Vector2(-332, 5.99999)
+scale = Vector2(0.97929, 1)
+texture = ExtResource("2_27mwu")
+
+[node name="Inventory" type="Sprite2D" parent="Background"]
+position = Vector2(428, 0)
+scale = Vector2(0.762651, 0.762651)
+texture = ExtResource("3_rddie")
+
+[node name="skill_1" type="Sprite2D" parent="Background/Inventory"]
+position = Vector2(-165, -350)
+scale = Vector2(0.07, 0.15)
+
+[node name="skill_2" type="Sprite2D" parent="Background/Inventory"]
+position = Vector2(165, -350)
+scale = Vector2(0.0700742, 0.15)
+
+[node name="skill_3" type="Sprite2D" parent="Background/Inventory"]
+position = Vector2(0, -350)
+scale = Vector2(0.07, 0.152)
+
+[node name="skill_4" type="Sprite2D" parent="Background/Inventory"]
+position = Vector2(165, -150)
+scale = Vector2(0.069, 0.15)
+
+[node name="skill_5" type="Sprite2D" parent="Background/Inventory"]
+position = Vector2(0, -150)
+scale = Vector2(0.066, 0.15)
+
+[node name="skill_6" type="Sprite2D" parent="Background/Inventory"]
+position = Vector2(-165, -150)
+scale = Vector2(0.067, 0.15)

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://drr1fmg7gku21"]
+
+[ext_resource type="Script" path="res://game/scripts/card_generation.gd" id="1_pllfd"]
+[ext_resource type="Texture2D" uid="uid://d0ya6yu7fbwlg" path="res://game/images/temp_fon.png" id="2_8b6s1"]
+
+[node name="Card_generation" type="Node2D"]
+script = ExtResource("1_pllfd")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(1, 1.001)
+texture = ExtResource("2_8b6s1")
+
+[node name="card" type="Sprite2D" parent="background"]
+scale = Vector2(0.184, 0.45)
+
+[node name="Label" type="Label" parent="background/card"]
+offset_left = -701.0
+offset_top = -186.0
+offset_right = 679.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 100

@@ -1,0 +1,121 @@
+[gd_scene load_steps=17 format=3 uid="uid://d3f3bnvamigjf"]
+
+[ext_resource type="Texture2D" uid="uid://cwoslf33mes0e" path="res://assets/sprites/slime_green.png" id="1_4tkkl"]
+[ext_resource type="Script" path="res://game/scripts/FlowerButton.gd" id="2_gmra0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bshas"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aygxl"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ojdb"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sasfh"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dddo"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1jrd6"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gd8v8"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e53ug"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vveom"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(0, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kj4r4"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thjxr"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(48, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0v0ba"]
+atlas = ExtResource("1_4tkkl")
+region = Rect2(72, 48, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5vmg4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bshas")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aygxl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ojdb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sasfh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dddo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1jrd6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gd8v8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e53ug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vveom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kj4r4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thjxr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0v0ba")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_16rw1"]
+size = Vector2(266, 69)
+
+[node name="FlowerHead" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(13.8009, 4.28017)
+sprite_frames = SubResource("SpriteFrames_5vmg4")
+autoplay = "default"
+frame_progress = 0.826912
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_gmra0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 18)
+shape = SubResource("RectangleShape2D_16rw1")
+
+[node name="ZonePicker" type="Button" parent="Area2D"]
+offset_left = -88.0
+offset_top = -17.0
+offset_right = 4.0
+offset_bottom = -3.0
+scale = Vector2(0.694962, 0.949661)
