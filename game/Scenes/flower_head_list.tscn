@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://cs0aetqu31t3r"]
+
+[ext_resource type="Texture2D" uid="uid://b43dcqg5vtfoy" path="res://game/images/testbg.png" id="1_2vt8s"]
+[ext_resource type="Script" path="res://game/scripts/uiscaler.gd" id="1_24iqh"]
+[ext_resource type="Script" path="res://game/scripts/PinSkill.gd" id="3_1s57t"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0gu6o"]
+load_path = "res://.godot/imported/testbg.png-d74da5c6680301e68a4273647a2f2777.ctex"
+
+[node name="FlowerHeadList" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+scale = Vector2(1.30333, 4.28572)
+texture = SubResource("CompressedTexture2D_0gu6o")
+script = ExtResource("1_24iqh")
+Width = 400
+Height = 720
+
+[node name="Buttons" type="Node2D" parent="."]
+
+[node name="TextureButton" type="TextureButton" parent="Buttons"]
+modulate = Color(0, 0, 1, 1)
+offset_left = -132.0
+offset_top = -304.0
+offset_right = -68.0
+offset_bottom = -240.0
+texture_normal = ExtResource("1_2vt8s")
+stretch_mode = 0
+script = ExtResource("3_1s57t")
+TargetPlaceName = "FlowerHead"
+
+[node name="TextureButton2" type="TextureButton" parent="Buttons"]
+modulate = Color(0.936968, 0, 0.200558, 1)
+offset_left = 67.0
+offset_top = -305.0
+offset_right = 131.0
+offset_bottom = -241.0
+texture_normal = ExtResource("1_2vt8s")
+stretch_mode = 0
+script = ExtResource("3_1s57t")
+TargetPlaceName = "FlowerHead"
+
+[node name="TextureButton3" type="TextureButton" parent="Buttons"]
+modulate = Color(0, 0.605715, 0.265659, 1)
+offset_left = -23.0
+offset_top = -187.0
+offset_right = 41.0
+offset_bottom = -123.0
+scale = Vector2(1, 0.99282)
+texture_normal = ExtResource("1_2vt8s")
+stretch_mode = 0
+script = ExtResource("3_1s57t")
+TargetPlaceName = "FlowerHead"

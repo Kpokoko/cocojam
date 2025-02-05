@@ -1,7 +1,9 @@
-[gd_scene load_steps=17 format=3 uid="uid://d3f3bnvamigjf"]
+[gd_scene load_steps=19 format=3 uid="uid://d3f3bnvamigjf"]
 
 [ext_resource type="Texture2D" uid="uid://cwoslf33mes0e" path="res://assets/sprites/slime_green.png" id="1_4tkkl"]
 [ext_resource type="Script" path="res://game/scripts/FlowerButton.gd" id="2_gmra0"]
+[ext_resource type="Texture2D" uid="uid://b43dcqg5vtfoy" path="res://game/images/testbg.png" id="3_5lux8"]
+[ext_resource type="Script" path="res://game/scripts/ShopSceneEnabler.gd" id="3_v4v6j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bshas"]
 atlas = ExtResource("1_4tkkl")
@@ -113,9 +115,12 @@ script = ExtResource("2_gmra0")
 position = Vector2(0, 18)
 shape = SubResource("RectangleShape2D_16rw1")
 
-[node name="ZonePicker" type="Button" parent="Area2D"]
-offset_left = -88.0
-offset_top = -17.0
-offset_right = 4.0
-offset_bottom = -3.0
-scale = Vector2(0.694962, 0.949661)
+[node name="ZonePicker" type="TextureButton" parent="Area2D"]
+offset_left = -133.0
+offset_top = -14.0
+offset_right = 133.0
+offset_bottom = 50.0
+texture_normal = ExtResource("3_5lux8")
+stretch_mode = 5
+script = ExtResource("3_v4v6j")
+TargetSceneName = "FlowerHeadList"
