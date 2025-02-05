@@ -24,7 +24,7 @@ func take_damage(amount: int, steps: int):
 		die()
 
 func die():
-	print("lololololol")
+	print("lolololololsadsadaws")
 	Globals.spawn_new_monster()
 	queue_free()
 	
