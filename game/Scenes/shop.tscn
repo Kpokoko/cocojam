@@ -1,31 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://bd8vwtfbup02p"]
+[gd_scene load_steps=2 format=3 uid="uid://bd8vwtfbup02p"]
 
 [ext_resource type="PackedScene" uid="uid://blap2giw1oy6a" path="res://game/Scenes/flower.tscn" id="1_lnnul"]
-[ext_resource type="Script" path="res://game/scripts/ListsKeeper.gd" id="2_h5u5f"]
-[ext_resource type="PackedScene" uid="uid://cs0aetqu31t3r" path="res://game/Scenes/flower_head_list.tscn" id="2_mgyrm"]
-[ext_resource type="PackedScene" uid="uid://ch580nijr88ew" path="res://game/Scenes/stem_list.tscn" id="2_qcawm"]
-[ext_resource type="PackedScene" uid="uid://bp0uoqsix3xha" path="res://game/Scenes/left_leaf_list.tscn" id="3_k7k4v"]
-[ext_resource type="PackedScene" uid="uid://dwgi5sxt3kdm5" path="res://game/Scenes/right_leaf_list.tscn" id="5_sg64q"]
 
-[node name="Shop" type="Node2D"]
-script = ExtResource("2_h5u5f")
-Scenes = Array[String](["LeftLeafList", "RightLeafList", "StemList", "FlowerHeadList"])
+[node name="Game" type="Node2D"]
 
-[node name="FlowerHeadList" parent="." instance=ExtResource("2_mgyrm")]
-visible = false
-position = Vector2(1081, 360)
+[node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Flower" parent="." instance=ExtResource("1_lnnul")]
-position = Vector2(287, 606)
-
-[node name="LeftLeafList" parent="." instance=ExtResource("3_k7k4v")]
-visible = false
-position = Vector2(1081, 360)
-
-[node name="RightLeafList" parent="." instance=ExtResource("5_sg64q")]
-visible = false
-position = Vector2(1081, 360)
-
-[node name="StemList" parent="." instance=ExtResource("2_qcawm")]
-visible = false
-position = Vector2(1081, 360)
+position = Vector2(-13, 230)

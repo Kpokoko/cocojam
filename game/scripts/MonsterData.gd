@@ -6,7 +6,6 @@ var monster_presets = [
 		"health": 80,
 		"damage": 10,
 		"steps_given": 5,
-		"score": 3,
 		"sprite": preload("res://game/sprites/Goblin.svg")
 	},
 	{
@@ -14,7 +13,6 @@ var monster_presets = [
 		"health": 150,
 		"damage": 20,
 		"steps_given": 8,
-		"score": 5,
 		"sprite": preload("res://game/sprites/Orc.svg")
 	},
 	{
@@ -22,7 +20,6 @@ var monster_presets = [
 		"health": 300,
 		"damage": 40,
 		"steps_given": 10,
-		"score": 10,
 		"sprite": preload("res://game/sprites/Dragon.svg")
 	}
 ]

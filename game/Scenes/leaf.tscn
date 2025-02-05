@@ -1,10 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://bd4rjb8dlj7dt"]
+[gd_scene load_steps=10 format=3 uid="uid://bd4rjb8dlj7dt"]
 
 [ext_resource type="Texture2D" uid="uid://cwoslf33mes0e" path="res://assets/sprites/slime_green.png" id="1_3vnya"]
 [ext_resource type="Script" path="res://game/scripts/leaf.gd" id="1_suidf"]
 [ext_resource type="Script" path="res://game/scripts/FlowerButton.gd" id="3_hn330"]
-[ext_resource type="Texture2D" uid="uid://b43dcqg5vtfoy" path="res://game/images/testbg.png" id="4_gsbh8"]
-[ext_resource type="Script" path="res://game/scripts/ShopSceneEnabler.gd" id="5_le22a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6qtqg"]
 atlas = ExtResource("1_3vnya")
@@ -62,13 +60,9 @@ script = ExtResource("3_hn330")
 position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_63sab")
 
-[node name="ZonePicker" type="TextureButton" parent="Area2D"]
-offset_left = -34.0
+[node name="ZonePicker" type="Button" parent="Area2D"]
+offset_left = -22.0
 offset_top = -7.0
-offset_right = 32.0
-offset_bottom = 57.0
-scale = Vector2(1.0139, 0.463892)
-texture_normal = ExtResource("4_gsbh8")
-stretch_mode = 5
-script = ExtResource("5_le22a")
-TargetSceneName = "LeftLeafList"
+offset_right = -5.0
+offset_bottom = 1.0
+scale = Vector2(0.694962, 0.949661)

@@ -1,15 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://drr1fmg7gku21"]
+[gd_scene load_steps=3 format=3 uid="uid://bciriv855fqtg"]
 
-[ext_resource type="Script" path="res://game/scripts/card_generation.gd" id="1_pllfd"]
-[ext_resource type="Texture2D" uid="uid://d0ya6yu7fbwlg" path="res://game/images/temp_fon.png" id="2_8b6s1"]
+[ext_resource type="Script" path="res://game/scripts/card_generation.gd" id="1_5dkce"]
+[ext_resource type="Texture2D" uid="uid://d0ya6yu7fbwlg" path="res://game/images/temp_fon.png" id="2_tbfn8"]
 
 [node name="Card_generation" type="Node2D"]
-script = ExtResource("1_pllfd")
+script = ExtResource("1_5dkce")
 
 [node name="background" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
 scale = Vector2(1, 1.001)
-texture = ExtResource("2_8b6s1")
+texture = ExtResource("2_tbfn8")
 
 [node name="card" type="Sprite2D" parent="background"]
 scale = Vector2(0.184, 0.45)

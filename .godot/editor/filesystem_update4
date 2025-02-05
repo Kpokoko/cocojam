@@ -1,8 +1,8 @@
-res://game/Scenes/shop.tscn
+res://game/Scenes/card_generation.tscn
 res://game/Scenes/node_2d_test.tscn
 res://game/Scenes/main_game_scene.tscn
 res://game/scene_parts/monster.tscn
-res://game/Scenes/flower_head_list.tscn
+res://game/Scenes/shop.tscn
 res://game/Scenes/stem.tscn
 res://game/Scenes/flower_head.tscn
 res://game/Scenes/flower.tscn
@@ -10,6 +10,4 @@ res://game/Scenes/leaf.tscn
 res://game/Scenes/right_leaf_list.tscn
 res://game/Scenes/left_leaf_list.tscn
 res://game/Scenes/stem_list.tscn
-res://game/scripts/PinSkill.gd
-res://game/scripts/ShopSceneEnabler.gd
-res://game/scripts/ListsKeeper.gd
+res://game/Scenes/flower_head_list.tscn

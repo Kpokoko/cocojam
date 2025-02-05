@@ -4,7 +4,6 @@ extends MarginContainer
 @onready var score_label = $HBoxContainer/Score
 @onready var steps_label = $HBoxContainer2/Steps
 @onready var enemy_health_label = $"../HBoxContainer2/HP_Enemy"
-var enemy = []
 
 func _ready():
 	Events.health_changes.connect(update_health)
@@ -27,44 +26,34 @@ func enemy_take_damage(en_health: int):
 	enemy_health_label.text = str(en_health)
 	
 func _on_skill_1_pressed() -> void:
-	enemy = []
 	var Monster = get_tree().current_scene.get_node_or_null("Monster") 
-	var monster = get_tree().current_scene.get_node_or_null("monster")
+	var monster = get_tree().current_scene.get_node_or_null("monster") 
 	if Monster:
-		enemy.append(Monster)
+		Monster.take_damage(10,1)
 	elif monster:
-		enemy.append(monster)
-	enemy[0].take_damage(0,1)
-	enemy[0].add_effect("roots",0,2)
+		monster.take_damage(10,1)
 	
 
 func _on_skill_2_pressed() -> void:
-	enemy = []
 	var Monster = get_tree().current_scene.get_node_or_null("Monster") 
-	var monster = get_tree().current_scene.get_node_or_null("monster")
+	var monster = get_tree().current_scene.get_node_or_null("monster") 
 	if Monster:
-		enemy.append(Monster)
+		Monster.take_damage(20,2)
 	elif monster:
-		enemy.append(monster)
-	enemy[0].take_damage(0,1)
-	enemy[0].add_effect("poison",1,2)
+		monster.take_damage(20,2)
 
-func _on_skill_3_pressed() -> void: 
-	enemy = []
+func _on_skill_3_pressed() -> void:
 	var Monster = get_tree().current_scene.get_node_or_null("Monster") 
-	var monster = get_tree().current_scene.get_node_or_null("monster")
+	var monster = get_tree().current_scene.get_node_or_null("monster") 
 	if Monster:
-		enemy.append(Monster)
+		Monster.take_damage(40,3)
 	elif monster:
-		enemy.append(monster)
-	enemy[0].take_damage(0,1)
+		monster.take_damage(40,3)
 
 func _on_skill_4_pressed() -> void:
-	enemy = []
 	var Monster = get_tree().current_scene.get_node_or_null("Monster") 
-	var monster = get_tree().current_scene.get_node_or_null("monster")
+	var monster = get_tree().current_scene.get_node_or_null("monster") 
 	if Monster:
-		enemy.append(Monster)
+		Monster.take_damage(50,4)
 	elif monster:
-		enemy.append(monster)
-	enemy[0].take_damage(10,1)
+		monster.take_damage(50,4)

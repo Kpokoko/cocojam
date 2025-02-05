@@ -11,15 +11,16 @@ config_version=5
 [application]
 
 config/name="cocojam"
-run/main_scene="res://game/Scenes/shop.tscn"
+run/main_scene="res://game/Scenes/main_game_scene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-run/canvas_textures/default_texture_filter=1
 
 [autoload]
 
 Events="*res://core/events.gd"
 Globals="*res://core/globals.gd"
 MonsterData="*res://game/scripts/MonsterData.gd"
+Cards="*res://game/scripts/cards.gd"
+Inventory="*res://game/scripts/inventory.gd"
 
 [display]
 
