@@ -6,7 +6,6 @@ Sprite2D
 HBoxContainer
 Label
 MarginContainer
-Control
 Timer
 VBoxContainer
 ColorRect
