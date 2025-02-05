@@ -72,6 +72,7 @@ func effects_check(new_health):
 		Globals.damage = damage
 
 func die():
+	print("lololololol")
 	Globals.spawn_new_monster()
 	Globals.change_point(score)
 	queue_free()

@@ -1,10 +1,2 @@
 res://game/Scenes/node_2d_test.tscn
-res://game/Scenes/in_game_hud.gd
-res://game/Scenes/main_game_scene.tscn
-res://game/scene_parts/monster.tscn
-res://game/Scenes/shop.tscn
-res://game/Scenes/flower.tscn
-res://game/Scenes/leaf.tscn
-res://game/Scenes/stem.tscn
-res://game/Scenes/flower_head.tscn
 res://Monster.gd
