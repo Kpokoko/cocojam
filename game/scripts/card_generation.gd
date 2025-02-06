@@ -12,4 +12,8 @@ func _ready():
 		
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
+<<<<<<< Updated upstream
 		get_tree().change_scene_to_file("res://scenes/skills.tscn")
+=======
+		get_tree().change_scene_to_file("res://game/Scenes/skills.tscn")
+>>>>>>> Stashed changes

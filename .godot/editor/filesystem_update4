@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 res://game/Scenes/card_generation.tscn
+=======
+>>>>>>> Stashed changes
 res://game/Scenes/node_2d_test.tscn
 res://game/Scenes/main_game_scene.tscn
 res://game/scene_parts/monster.tscn
@@ -11,3 +14,7 @@ res://game/Scenes/right_leaf_list.tscn
 res://game/Scenes/left_leaf_list.tscn
 res://game/Scenes/stem_list.tscn
 res://game/Scenes/flower_head_list.tscn
+<<<<<<< Updated upstream
+=======
+res://game/scripts/card_generation.gd
+>>>>>>> Stashed changes
